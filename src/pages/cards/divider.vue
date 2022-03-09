@@ -1,5 +1,5 @@
 <template>
-<div class="col-6 mt-3">
+<div class="col-md-6 mt-3">
     <b-card header="Divider">
         <b-row>
             <b-col  cols="4" class="border-right p-3 text-center" >

@@ -1,6 +1,6 @@
 <template>
-  <div class="col-md-6">
-    <b-card header="Basic">
+  <div class="col-md-6 mt-3">
+    <b-card header="Colors">
       <div class="p-3">
         <label for="demo-sb">Spin Button with Colors</label>
         <p>Color with class attributes <code>btn-primary</code>

@@ -4,7 +4,7 @@
         <div class="p-3">
                 <!-- Accept all image formats by IANA media type wildcard-->
                 <label for="wildcard">Accept all image</label>
-                <b-input-group class="mt-3">
+                <b-input-group >
                     <b-input-group-prepend is-text>
                         <feather-icon icon="ImageIcon" />
                     </b-input-group-prepend>
@@ -12,16 +12,16 @@
                 </b-input-group>
 
                 <!-- Accept specific image formats by IANA type -->
-                <label for="IANA" class="mt-1">Accept specific image formats by IANA type</label>
-                <b-input-group class="mt-3">
+                <label for="IANA" class="mt-3">Accept specific image formats by IANA type</label>
+                <b-input-group >
                     <b-input-group-prepend is-text>
                         <feather-icon icon="ImageIcon" />
                     </b-input-group-prepend>
                     <b-form-file id="IANA" accept="image/jpeg, image/png, image/gif" />
                 </b-input-group>
                 <!-- Accept specific image formats by extension -->
-                <label for="extension" class="mt-1">Accept specific image formats by extension</label>
-                <b-input-group class="mt-3">
+                <label for="extension" class="mt-3">Accept specific image formats by extension</label>
+                <b-input-group >
                     <b-input-group-prepend is-text>
                         <feather-icon icon="ImageIcon" />
                     </b-input-group-prepend>

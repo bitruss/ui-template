@@ -76,7 +76,7 @@
                     <b-overlay :show="vsecs<=0?false:true">
                         <b-button variant="secondary" @click="send_vcode"> Send Me V-code </b-button>
                         <template #overlay>
-                            <b-spinner small class="mr-3 mt-3" label="Small Spinner" /> {{vsecs}}s
+                            <b-spinner small class="mr-3" label="Small Spinner" /> {{vsecs}}s
                         </template>
                     </b-overlay>
                 </b-input-group-append>

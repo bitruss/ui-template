@@ -2,7 +2,7 @@
 <div class="col-12 mb-3">
     <b-card header="Multi-Files">
         <div class="p-3">
-            <b-input-group class="mt-3">
+            <b-input-group>
                 <b-input-group-prepend is-text>
                     <feather-icon icon="FileIcon" />
                 </b-input-group-prepend>
