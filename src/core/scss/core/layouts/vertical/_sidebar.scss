@@ -6,6 +6,12 @@
         overflow: hidden;
         position: fixed;
         background-color: $v-sidebar-bg-color;
+        box-shadow: $v-sidebar-box-shadow;
+        margin: $v-sidebar-margin;
+        max-height: 80%;
+        border-radius: 1.0rem;
+        padding: 10px;
+        padding-top: 0px;
 
         a {
             outline: none;
@@ -17,21 +23,21 @@
             list-style: none;
         }
 
-        .navlogo {
-            margin-top: 20px;
-            margin-bottom: 10px;
-            .text {
-                padding: 10px 25px;
-                border-radius: 5px;
-                border: none;
-                font-size: 20px;
-                font-weight: 600;
-                margin: calc(1rem) 0 0.8rem 1.2rem;
-                background-color: $v-sidebar-navlogo-text-bg-color;
-                color: $v-sidebar-navlogo-text-color;
+        // .navlogo {
+        //     margin-top: 20px;
+        //     margin-bottom: 10px;
+        //     .text {
+        //         padding: 10px 25px;
+        //         border-radius: 5px;
+        //         border: none;
+        //         font-size: 20px;
+        //         font-weight: 600;
+        //         margin: calc(1rem) 0 0.8rem 1.2rem;
+        //         background-color: $v-sidebar-navlogo-text-bg-color;
+        //         color: $v-sidebar-navlogo-text-color;
                  
-            }
-        }
+        //     }
+        // }
 
         .navigation {
             padding: 1rem 0.8rem;
@@ -47,8 +53,8 @@
                 font-size: 0.9rem;
                 text-transform: uppercase;
                 letter-spacing: 0.01rem;
-
                 span {
+                    font-size: 1.0rem;
                     font-weight: 600;
                     color: $v-sidebar-navigation-header-color;
                 }
@@ -71,7 +77,7 @@
                 margin: 3px 0px;
 
                 a {
-                    padding: 9px 15px;
+                    padding: 6px 15px;
                     line-height: 1.5;
                     text-overflow: ellipsis;
                     overflow: hidden;

@@ -20,9 +20,6 @@
     <!--vertical -->
     <div class="main-menu">
         <VuePerfectScrollbar class="scroll-area" :settings="{ maxScrollbarLength: 60, wheelPropagation: false }" tagname="ul">
-            <li class="navlogo">
-                <span class="text">DashBoard</span>
-            </li>
             <nav-menu-items />
         </VuePerfectScrollbar>
     </div>
