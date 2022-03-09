@@ -1,0 +1,19 @@
+@import "vue-prism-editor/dist/prismeditor.min";
+@import "./prism-onedark";
+
+.prism-editor-wrapper {
+    padding: 15px 5px;
+    border-radius: 3px;
+    font-family: Fira code, Fira Mono, Consolas, Menlo, Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px;
+    background: rgb(48, 48, 48);
+    pre {
+        color: white;
+    }
+}
+
+.prism-editor__textarea:focus {
+    outline: none;
+}

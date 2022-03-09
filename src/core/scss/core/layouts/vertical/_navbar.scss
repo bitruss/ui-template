@@ -1,0 +1,43 @@
+
+.vertical-layout {
+  .navbar {
+    padding: 0px;
+    min-height: $v-navbar-height;
+    z-index: 997;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin-left: calc(#{$v-sidebar-width} );
+    margin-top: calc(#{$v-floating-nav-margin});
+    margin-top: 0px;
+    z-index: 12;
+
+    border: $v-navbar-boder;
+    border-top: none !important;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: $v-navbar-background-color;
+    box-shadow: $v-navbar-box-shadow;
+
+    .navbar-container {
+      padding: 0.3rem 1rem;
+      flex-basis: 100%;
+      transition: 300ms ease all;
+      margin-left: 0;
+    }
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  &.vertical-overlay-menu {
+    .navbar {
+      margin-left: 0px;
+      margin-right:0px;
+    }
+    .menu-toggler {
+      display: block;
+    }
+  }
+}

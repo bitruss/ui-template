@@ -1,0 +1,46 @@
+.input-group-prepend .input-group-text,
+.input-group-append .input-group-text,
+input.form-control {
+  background-color: $white;
+  border: 1px solid #e5e7ed;
+}
+
+output.form-control {
+  background-color: transparent;
+}
+
+.custom-range {
+  background-color: $white m !important;
+  border: 1px solid #e5e7ed !important;
+  border-left: 0px !important;
+  border-right: 0px !important;
+}
+
+.input-group-lg > .custom-range {
+  height: calc(1.5em + 1rem + 3px);
+}
+
+.form-control::placeholder {
+  color: #a7a7a7;
+}
+
+.input-group-sm {
+  .custom-range,
+  .input-group-prepend,
+  .input-group-append {
+    font-size: 0.875rem !important;
+    height: calc(1.5em + 0.5rem + 2px) !important;
+    .btn {
+      padding-top: 0.2rem;
+    }
+  }
+}
+
+.input-group-lg {
+  .custom-range,
+  .input-group-prepend,
+  .input-group-append {
+    font-size: 1.25rem !important;
+    height: calc(1.5em + 1rem + 2px) !important;
+  }
+}

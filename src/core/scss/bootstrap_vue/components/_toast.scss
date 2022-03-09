@@ -1,0 +1,98 @@
+.toast {
+    border: 0px !important;
+    .close {
+        background-color: none !important;
+        text-shadow: none !important;
+    }
+    a {
+        text-decoration: underline !important;
+    }
+}
+
+.b-toast-primary,
+.b-toast-info,
+.b-toast {
+    .toast-header {
+        color: white !important;
+        background-color: $blue !important;
+        border: 0px !important;
+
+        .text-muted,
+        strong {
+            color: white !important;
+        }
+
+        .close {
+            color: white !important;
+        }
+    }
+}
+
+.b-toast-secondary {
+    .toast-header {
+        background-color: #f1f0f0 !important;
+        .mr-auto,
+        strong,
+        .text-muted {
+            color: #2c2c2c !important;
+        }
+        .close {
+            color: black !important;
+        }
+    }
+}
+
+.b-toast-warning {
+    .toast-header {
+        background-color: $orange !important;
+
+        .mr-auto,
+        strong,
+        .text-muted {
+            color: #2c2c2c !important;
+        }
+    }
+}
+
+.b-toast-danger {
+    .toast-header {
+        color: white;
+        background-color: $red !important;
+        .mr-auto,
+        strong,
+        .text-muted {
+            color: white !important;
+        }
+        .close {
+            color: white !important;
+        }
+    }
+}
+
+.b-toast-success {
+    .toast-header {
+        color: white;
+        background-color: $green !important;
+        .mr-auto,
+        strong,
+        .text-muted {
+            color: white !important;
+        }
+        .close {
+            color: white !important;
+        }
+    }
+}
+
+.b-toast,
+.b-toast-primary,
+.b-toast-info,
+.b-toast-warning,
+.b-success,
+.b-danger {
+    & .toast-body {
+        color: #222222 !important;
+        border: 0px !important;
+        background-color: white !important;
+    }
+}

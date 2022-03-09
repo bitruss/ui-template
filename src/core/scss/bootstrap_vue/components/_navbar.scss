@@ -1,0 +1,9 @@
+.navbar {
+    .dropdown-toggle.hide-arrow,
+    .dropdown-toggle {
+        &::before,
+        &::after {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+// .b-avatar{
+//     background-color: #f5f5f5 !important;
+//     box-shadow: 0px 0px 0px 1px #d9d9d9;
+//     .dark &{
+//         background-color: #313134 !important;
+//         box-shadow: 0px 0px 0px 1px #1a1a1a;
+//     }
+// }
+
+.b-avatar {
+    border: 0px !important;
+    box-shadow: none !important;
+    .b-avatar-badge {
+        font-size: 0.7rem !important;
+    }
+
+    &.b-avatar-sm {
+        .b-avatar-badge {
+            font-size: 0.5rem !important;
+        }
+    }
+    &.b-avatar-lg {
+        .b-avatar-badge {
+            font-size: 0.9rem !important;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+.authwrapper {
+    width: 100%;
+    max-width: 550px;
+    margin: 0 auto;
+    margin-top: 8%;
+
+    .bottomtext {
+        text-align: center;
+        color: #b7b6b6;
+    }
+
+    .goto_register {
+        color: #4f4987;
+        &:hover {
+            color: #5d50dd;
+        }
+    }
+
+    .goto_login {
+        color: #4f4987;
+        &:hover {
+            color: #5d50dd;
+        }
+    }
+}

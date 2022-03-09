@@ -1,0 +1,10 @@
+.custom-file-label::after {
+    background-color: $white;
+    cursor: pointer;
+}
+
+.custom-file-label {
+    background-color: $white;
+    border: 1px solid #e5e7ed;
+    color: gray;
+}

@@ -1,0 +1,27 @@
+.btn-secondary {
+  color: #444444;
+  background-color:  rgb(241, 241, 241);
+  border: 1px solid #ebe9e9;
+
+  &:hover{
+    background-color:  rgb(241, 241, 241);
+    color: #444444;
+    border: 1px solid #ebe9e9;
+  }
+}
+
+.btn-info,
+.btn-primary ,
+.btn-danger ,
+.btn-success {
+  svg{
+    color: $white;
+  }
+  color: $white;
+}
+
+
+.btn-outline-info:hover{
+  color: white;
+}
+

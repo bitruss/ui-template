@@ -1,0 +1,34 @@
+// ///////////////////////////////////////////////
+// Zoom Fade
+// ///////////////////////////////////////////////
+.zoom-fade-enter-active,
+.zoom-fade-leave-active {
+  transition: transform 0.35s, opacity 0.28s ease-in-out;
+}
+.zoom-fade-enter {
+  transform: scale(0.9);
+  opacity: 0;
+}
+
+.zoom-fade-leave-to {
+  transform: scale(1);
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

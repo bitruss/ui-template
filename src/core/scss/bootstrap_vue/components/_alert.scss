@@ -1,0 +1,44 @@
+.alert {
+    border: 0px;
+    color: #f1f1f1;
+    font-size: 1rem;
+
+    svg {
+        width: 1rem;
+        height: 1rem;
+        margin-top: -0.2rem;
+        margin-right: 0.5rem;
+    }
+}
+
+.alert-primary {
+    background-color: $purple !important;
+    .dark & {
+        background-color: $purple !important;
+    }
+}
+
+.alert-secondary {
+    color: #2a2a2a !important;
+}
+
+.alert-danger {
+    background-color: $red !important;
+}
+
+.alert-success {
+    background-color: $success !important;
+}
+
+.alert-warning {
+    color: #2c2c2c !important;
+    background-color: $orange !important;
+}
+
+.alert-info {
+    background-color: $blue !important;
+}
+
+.alert-dark {
+    background-color: $dark !important;
+}

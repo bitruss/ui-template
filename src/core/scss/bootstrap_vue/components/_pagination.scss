@@ -1,0 +1,90 @@
+.pagination {
+    .page-item:first-child .page-link {
+        border-top-left-radius: 2rem !important;
+        border-bottom-left-radius: 2rem !important;
+        font-size: 1rem !important;
+    }
+
+    .page-item:last-child .page-link {
+        border-top-right-radius: 2rem !important;
+        border-bottom-right-radius: 2rem !important;
+    }
+
+    .page-item {
+        button,
+        span {
+            font-family: "Segoe UI", Arial, sans-serif;
+            border: 0px !important;
+            background-color: #f7f7f7 !important;
+            color: #7a7a7a !important;
+        }
+
+        &.active {
+            background-color: #f7f7f7 !important;
+        }
+
+        &.disabled span {
+            color: #cbcbcb !important;
+        }
+    }
+
+    &.pagination-primary .page-item.active .page-link,
+    .page-item.active .page-link {
+        background: $blue !important;
+        color: white !important;
+        border-radius: 3rem !important;
+    }
+
+    &.pagination-secondary .page-item.active .page-link {
+        background: #ebebeb !important;
+        color: #4c4c4c !important;
+    }
+
+    &.pagination-success .page-item.active .page-link {
+        background: $green !important;
+    }
+
+    &.pagination-danger .page-item.active .page-link {
+        background: $red !important;
+    }
+
+    &.pagination-warning .page-item.active .page-link {
+        background: $orange !important;
+        color: #4c4c4c !important;
+    }
+
+    &.pagination-dark .page-item.active .page-link {
+        background: $dark !important;
+    }
+
+    &.pagination-info .page-item.active .page-link {
+        background: $blue !important;
+    }
+
+    .page-item:not(.prev-item) .page-link,
+    .page-item:not(.next-item) .page-link,
+    .page-item:not(.first) .page-link,
+    .page-item:not(.last) .page-link,
+    .page-item:not(.active) .page-link {
+        line-height: 1rem;
+    }
+
+    .page-link {
+        padding: 0.5rem 0.7rem;
+        font-size: 1rem;
+    }
+
+    &.pagination-sm {
+        .page-link {
+            padding: 0.3rem 0.7rem;
+        }
+    }
+
+    &.pagination-lg {
+        .page-link {
+            font-size: 1.14rem;
+            padding: 0.7rem 0.96rem !important;
+            margin: 0 !important;
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.apexcharts-canvas {
+  line[stroke="transparent"] {
+    display: none;
+  }
+
+  //tooltip
+  .apexcharts-tooltip {
+    .apexcharts-tooltip-title {
+      font-weight: 600;
+      background: darken(white, 1%) !important;
+      border-color: darken(white, 8%) !important;
+      .dark & {
+        background: lighten(black, 7%) !important;
+        border-color: lighten(black, 3%) !important;
+      }
+    }
+
+    background: white;
+    border-color: darken(white, 15%) !important;
+    .dark & {
+      background: lighten(black, 10%) !important;
+      border-color: lighten(black, 1%) !important;
+      box-shadow: 0px 0px 3px lighten(black, 5%);
+    }
+  }
+
+  .apexcharts-xaxistooltip,
+  .apexcharts-yaxistooltip {
+    background: darken(white, 2%) !important;
+    border-color: darken(white, 5%) !important;
+    .dark & {
+      background: lighten(black, 10%) !important;
+      border-color: lighten(black, 1%) !important;
+      color: darken(white, 25%) !important;
+    }
+
+    &:after,
+    &:before {
+      border-bottom-color: darken(white, 2%) !important;
+      .dark & {
+        border-bottom-color: lighten(black, 10%) !important;
+      }
+    }
+  }
+  //end of tooltip
+
+  .apexcharts-xcrosshairs,
+  .apexcharts-ycrosshairs,
+  .apexcharts-gridline {
+    stroke: darken(white, 8%);
+    .dark & {
+      stroke: lighten(black, 15%);
+    }
+  }
+
+  .apexcharts-title-text {
+    font-weight: 400;
+    filter: none;
+    fill: darken(white, 55%);
+    .dark & {
+      fill: lighten(black, 60%);
+    }
+  }
+
+  .apexcharts-text {
+    font-weight: 400;
+    filter: none;
+    fill: darken(white, 40%);
+    .dark & {
+      fill: lighten(black, 55%);
+    }
+  }
+
+  //for pie style chart
+  .apexcharts-pie {
+    .apexcharts-pie-series .apexcharts-pie-area {
+      stroke-width: 0;
+    }
+    .apexcharts-datalabel-label,
+    .apexcharts-datalabel-value {
+      font-size: 1.5rem;
+    }
+  }
+
+  .apexcharts-pie-label {
+    filter: none;
+    fill: white;
+    .dark & {
+      fill: lighten(black,15%);
+    }
+  }
+
+  .apexcharts-marker {
+    box-shadow: none;
+  }
+  
+  .apexcharts-legend-series {
+    & + .apexcharts-legend-series {
+      margin-top: 0.625rem;
+    }
+    .apexcharts-legend-text {
+      margin-left: 0.5rem;
+      font-size: 1rem !important;
+      color: darken(white, 40%) !important;
+      .dark &{
+        color: lighten(black, 55%) !important;
+      }
+    }
+  }
+
+  .apexcharts-data-labels rect {
+    stroke: none !important;
+  }
+}
+
+.apexcharts-legend.position-bottom {
+  bottom: 3rem;
+}

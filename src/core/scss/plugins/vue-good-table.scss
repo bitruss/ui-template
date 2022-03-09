@@ -1,0 +1,228 @@
+@import "vue-good-table/src/styles/style.scss";
+
+table.vgt-table {
+    //margin-top: 1px ;
+    font-size: 1rem;
+
+    .card &{
+        border: 0px !important;
+    }
+
+    td {
+        //padding: 0.05rem 0.3rem;
+        vertical-align: middle;
+        .dark & {
+            color: #e6e7ef;
+        }
+
+        .b-dropdown.btn-group {
+            svg {
+                .dark & {
+                    color: #ababab !important;
+                }
+            }
+
+            button {
+                padding: 0px !important;
+                height: 1rem !important;
+                margin-top: -3px;
+            }
+        }
+
+        button {
+            padding: 0.1rem 0.8rem !important;
+            height: inherit !important;
+            min-height: 1.6rem !important;
+            svg {
+                margin: 0rem 0.1rem;
+            }
+        }
+    }
+
+    th {
+        input:before {
+            background-color: #383838 !important;
+        }
+    }
+
+    thead th,
+    th.line-numbers,
+    th.vgt-checkbox-col {
+        background: #f8f8f8;
+        .dark & {
+            background: #0e0e0e;
+        }
+    }
+
+    &.bordered td,
+    &.bordered th { 
+        border: 1px solid #ededed;
+        .dark & {
+            border: 1px solid  #2a2a2a;
+        }
+    }
+
+    .dark & {
+        background-color:  transparent;
+    }
+
+    &.bordered tbody td {
+        .dark & {
+            border: 1px solid  #222222;
+        }
+    }
+
+    thead th {
+        .dark & {
+            color: #e6e7ef;
+        }
+    }
+
+    tr {
+        min-height: 60px !important;
+        &:hover {
+            .dark & {
+                background-color: #0e0e0e;
+            }
+        }
+    }
+}
+
+.vgt-inner-wrap {
+    box-shadow: none !important;
+}
+
+.vgt-selection-info-row {
+    padding: 5px 16px;
+    font-weight: bold;
+    display: flex;
+    vertical-align: middle;
+    line-height: 2.5rem;
+    border: 1px solid #ededed;
+    border-bottom: 0px;
+    background: #f8f8f8;
+    color: #7366f0;
+    .dark & {
+        background: #0e0e0e;
+        border: 1px solid  #222222;
+        border-bottom: 0px;
+    }
+}
+
+.vgt-wrap__footer {
+    color: #606266;
+    padding: 0.2rem 1em;
+    background: #f8f8f8;
+    border-top: 0px !important;
+    border: 1px solid #e7e7e7;
+    
+    .dark & {
+        color: #8a8b8d;
+        border:1px solid #303032;
+        background: #0e0e0e;
+    }
+
+    label {
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+    }
+
+    .footer__row-count {
+        margin-top: 8px;
+        margin-bottom: 5px;
+        margin-right: 30px;
+    }
+    form {
+        display: inline-flex;
+    }
+
+    .footer__row-count__select {
+        border: 1px solid transparent;
+    }
+
+    .footer__row-count::after {
+        top: 35%;
+    }
+
+    .footer__navigation__page-info__current-entry {
+        border-radius: 5px;
+        border: 1px solid #c5c4c4;
+        color: #909398;
+        width: 60px;
+        .dark & {
+            border: 1px solid #232324;
+            background-color: #2e2e30;
+            color: #5b5e61;
+        }
+    }
+
+    .footer__navigation__page-info {
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 7px;
+        margin-bottom: 5px;
+    }
+
+    .footer__navigation > button:first-of-type {
+        margin-left: -10px;
+        margin-right: 7px;
+    }
+    .footer__navigation__page-btn {
+        margin-left: 0px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        .chevron {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}
+
+.vgt-checkbox-col {
+    input {
+        position: relative;
+    }
+
+    input[type="checkbox"]::after {
+        content: "";
+        vertical-align: middle;
+        text-align: center;
+        position: absolute;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 1rem;
+        top: -0.1rem !important;
+        left: -0.1rem !important;
+        width: 1.3rem !important;
+        height: 1.3rem !important;
+
+        background: #ffffff;
+        border: 1px solid #e7e6e6;
+        .dark & {
+            background: #383838;
+            border: 1px solid #2c2c2c;
+        }
+    }
+
+    input[type="checkbox"]:checked:after {
+        background: $blue;
+        content: "-";
+        color: white;
+    }
+}
+
+.table_search {
+    
+    .input-group-text {
+        border-radius: 0 !important;
+    }
+}
+
+@media (max-width: 760px) {
+    .footer__navigation.vgt-pull-right {
+        float: left !important;
+    }
+    .footer__navigation__page-info{
+        margin-right: 60px !important;
+    }
+}

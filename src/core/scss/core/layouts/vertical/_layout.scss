@@ -1,0 +1,34 @@
+$v-navbar-height: 3.45rem !default;
+$v-floating-nav-margin: 1.3rem;
+
+$v-navbar-boder: none;
+$v-navbar-background-color:$white;
+$v-navbar-box-shadow: 0 10px 30px 0 rgb(17 38 146 / 5%);
+
+$v-sidebar-width: 330px !default;
+$v-sidebar-bg-color: $body-bg;
+$v-sidebar-navlogo-text-color: #8a92a6;
+$v-sidebar-navlogo-text-bg-color: #eaecf1;
+$v-sidebar-navigation-header-color: #8a92a6;
+$v-sidebar-navigation-header-active-color: $white;
+$v-sidebar-navigation-header-active-bg-color: $purple;
+$v-sidebar-navigation-item-color: #6c757d;
+$v-sidenav-navigation-group-open-bg-color: #eceef3;
+$v-sidenav-overlay-bg-color: rgba(34, 41, 47, 0.5);
+
+$v-app-content-bg-color:$body-bg;
+$v-app-content-color:$body-color;
+
+$footer-height: 1rem !default;
+
+.scroll-area {
+    position: relative;
+    margin: auto;
+    height:100%;
+    padding-top: 10px !important;
+    padding-bottom: 50px !important; 
+}
+
+@import "./navbar";
+@import "./sidebar";
+@import "./content";

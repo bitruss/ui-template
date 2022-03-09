@@ -1,0 +1,30 @@
+.vertical-layout {
+  .app-content {
+    position: relative;
+    transition: 300ms ease all;
+    backface-visibility: hidden;
+    min-height: 100vh;
+    padding: calc(#{$v-navbar-height} + #{$v-floating-nav-margin}) 0 0;
+    margin-left: calc( #{$v-sidebar-width});
+    background-color: $v-app-content-bg-color;
+    color: $v-app-content-color;
+
+    &.show-overlay {
+      .content-overlay {
+        z-index: 10;
+        opacity: 1;
+        ~ .header-navbar-shadow {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.vertical-overlay-menu {
+    .app-content {
+      margin-left: 0;
+      padding-left: -10px;
+      padding-right: -10px;
+    }
+  }
+}
