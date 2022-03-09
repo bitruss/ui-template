@@ -1,4 +1,4 @@
-# uui-full-examples
+# uui-template
 
 ## Project setup
 ```
