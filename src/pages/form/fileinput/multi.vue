@@ -1,7 +1,7 @@
 <template>
-<div class="col-12">
+<div class="col-12 mb-3">
     <b-card header="Multi-Files">
-        <div class="p-3 pt-4">
+        <div class="p-3">
             <b-input-group class="mt-3">
                 <b-input-group-prepend is-text>
                     <feather-icon icon="FileIcon" />

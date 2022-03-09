@@ -1,7 +1,7 @@
 <template>
-<div class="col-12">
+<div class="col-12 mb-3">
     <b-card header="Sizes">
-        <div class="p-3 pt-4">
+        <div class="p-3">
                 <b-card-text>
                     <span>Sizes with attributes of <code>size="sm"</code> or
                         <code>size="lg"</code>

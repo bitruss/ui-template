@@ -1,7 +1,7 @@
 <template>
-<div class="col-12">
+<div class="col-12 mb-3">
     <b-card header="Types">
-        <div class="p-3 pt-4">
+        <div class="p-3">
                 <!-- Accept all image formats by IANA media type wildcard-->
                 <label for="wildcard">Accept all image</label>
                 <b-input-group class="mt-3">
