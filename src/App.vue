@@ -53,17 +53,10 @@ export default {
             }
         },
     },
-
     components: {
         Vertical,
         Full,
         NavbarItems,
-    },
-    watch: {
-        $route(to, from) {
-            this.$store.commit("ui/UPDATE_NAV_MENU_HIDDEN", true);
-            this.$store.commit("auth/UPDATE_ACCESS_ACTIVE_PATH", to.path);
-        },
     },
     beforeCreate() {
         //ini access config

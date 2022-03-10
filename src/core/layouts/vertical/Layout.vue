@@ -76,7 +76,6 @@ export default {
             );
         },
     },
-
     created() {
         // UI Resize handler
         window.addEventListener("resize", () => {
