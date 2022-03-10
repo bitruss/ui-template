@@ -7,15 +7,15 @@
     position: fixed;
     left: 0;
     right: 0;
-    margin-left: calc(#{$v-sidebar-width} + 60px );
+    margin-left: calc(#{$v-sidebar-width} + 50px );
     margin-top: calc(#{$v-floating-nav-margin});
-    margin-top: 0px;
+    margin-top: 10px;
+    margin-right: 15px;
     z-index: 12;
 
     border: $v-navbar-boder;
     border-top: none !important;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    border-radius: 6px;
     background-color: $v-navbar-background-color;
     box-shadow: $v-navbar-box-shadow;
 
@@ -33,8 +33,8 @@
 
   &.vertical-overlay-menu {
     .navbar {
-      margin-left: 0px;
-      margin-right:0px;
+      margin-left: 15px;
+      margin-right:15px;
     }
     .menu-toggler {
       display: block;
