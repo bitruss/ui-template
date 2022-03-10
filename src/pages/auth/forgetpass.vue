@@ -96,9 +96,6 @@
           </div>  
       </b-card>
     </b-overlay>
-
-    <h6 class="bottomtext mt-4">All rights reserved @template.com</h6>
-    <h6 class="bottomtext mt-1">1988-2022</h6>
   </div>
 </template>
 

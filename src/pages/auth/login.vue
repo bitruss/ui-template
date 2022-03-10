@@ -2,7 +2,7 @@
 <div class="authwrapper">
     <b-overlay :show="show_overlay" rounded="sm">
         <b-card header="LOGIN" class="lghead">
-           <div class="p-3"> 
+            <div class="p-3">
                 <p>Welcome to dashboard login!</p>
                 <b-alert variant="primary" show class="mt-3">
                     <div class="alert-body">
@@ -75,12 +75,11 @@
                     New on our platform?
                     <a class="goto_register" @click="goto_register">Create an account</a>
                 </b-card-text>
-           </div>    
+            </div>
         </b-card>
     </b-overlay>
 
-    <h6 class="bottomtext mt-4">All rights reserved @template.com</h6>
-    <h6 class="bottomtext mt-1">1988-2022</h6>
+   
 </div>
 </template>
 
@@ -190,4 +189,3 @@ export default {
     },
 };
 </script>
-
