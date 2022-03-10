@@ -1,7 +1,7 @@
 <template>
-  <div class="row">
-    <basic />
+  <div class="row"> 
     <icon />
+    <basic />
     <lazy />
   </div>
 </template>
