@@ -5,7 +5,7 @@
     backface-visibility: hidden;
     min-height: 100vh;
     padding: calc(#{$v-navbar-height} + #{$v-floating-nav-margin}) 0 0;
-    margin-left: calc( #{$v-sidebar-width} + 35px );
+    margin-left: calc( #{$v-sidebar-width} + 15px );
     background-color: $v-app-content-bg-color;
     color: $v-app-content-color;
 

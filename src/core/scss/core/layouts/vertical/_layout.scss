@@ -1,16 +1,14 @@
 $v-navbar-height: 3.45rem !default;
-$v-floating-nav-margin: 1.3rem;
+$v-floating-nav-margin: 2.5rem;
 
 $v-navbar-boder: none;
 $v-navbar-background-color:$white;
 $v-navbar-box-shadow: 0 10px 30px 0 rgb(17 38 146 / 5%);
 
-$v-sidebar-width: 280px !default;
+$v-sidebar-width: 300px !default;
 $v-sidebar-bg-color: $white;
 $v-sidebar-box-shadow: 0 10px 30px 0 rgb(17 38 146 / 5%);
-$v-sidebar-margin:10px 0px 0px 25px;
-// $v-sidebar-navlogo-text-color: #8a92a6;
-// $v-sidebar-navlogo-text-bg-color: #eaecf1;
+$v-sidebar-margin:0px;
 $v-sidebar-navigation-header-color: #8a92a6;
 $v-sidebar-navigation-header-active-color: $white;
 $v-sidebar-navigation-header-active-bg-color: $purple;

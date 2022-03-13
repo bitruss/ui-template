@@ -7,15 +7,15 @@
     position: fixed;
     left: 0;
     right: 0;
-    margin-left: calc(#{$v-sidebar-width} + 50px );
-    margin-top: calc(#{$v-floating-nav-margin});
-    margin-top: 10px;
+    margin-left: calc(#{$v-sidebar-width} + 30px );
+    margin-top: 0;
     margin-right: 15px;
     z-index: 12;
 
     border: $v-navbar-boder;
     border-top: none !important;
-    border-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
     background-color: $v-navbar-background-color;
     box-shadow: $v-navbar-box-shadow;
 

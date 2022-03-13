@@ -45,7 +45,7 @@ import {
     BNavbarNav
 } from "bootstrap-vue";
 import ContentRenderer from "./ContentRenderer.vue";
-import NavMenuItems from "./menu/NavMenuItems.vue";
+import NavMenuItems from "./sidebar/NavMenuItems.vue";
 import {
     BNavItem
 } from "bootstrap-vue";
