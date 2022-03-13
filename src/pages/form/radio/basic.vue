@@ -1,7 +1,7 @@
 <template>
 <div class="col-12">
 
-    <h5 class="mb-1 mt-5">#Basic</h5>
+    <h5 class="mb-1">#Basic</h5>
     <b-row class="p-3 pt-4">
         <span> For cross browser consistency <code>&lt;b-form-radio&gt;</code>
             uses Bootstrap's custom radio input to replace the browser default radio input.
