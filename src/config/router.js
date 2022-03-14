@@ -18,10 +18,10 @@ export default [
         ]
     },
     {
-        header: 'Admin',
+        header: 'ADMIN',
         items: [
             {
-                name: 'admin',
+                name: 'Admin',
                 path: '/admin',
                 component: () => import('../pages/admin/admin.vue'),
                 meta:{
@@ -114,6 +114,17 @@ export default [
                         name: 'Radio',
                         path: '/pages/form/radio',
                         component: () => import('../pages/form/radio/radio.vue'),
+                        meta:{
+                            layout:'vertical',
+                            auth: (islogin, roles, permissions) => {
+                                return islogin;
+                            }           
+                        }
+                    },
+                    {
+                        name: 'Switch',
+                        path: '/pages/component/switch',
+                        component: () => import('../pages/form/switch/switch.vue'),
                         meta:{
                             layout:'vertical',
                             auth: (islogin, roles, permissions) => {

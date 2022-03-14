@@ -1,9 +1,7 @@
 <template>
 <div class="col-12 mb-3">
     <b-card header="Basic">
-        <vue-good-table 
-        class="m-1 mt-3"
-        :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
+        <vue-good-table class="m-1 mt-3" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
           enabled: true,
           mode: 'pages',
           perPage: 10,
@@ -12,17 +10,20 @@
         }">
             <template slot="table-row" slot-scope="props">
                 <span v-if="props.column.field === 'score'">
-                     <b-progress :value="props.row[props.column.field]" max="10" />
+                    <b-progress :value="props.row[props.column.field]" max="10" />
                 </span>
 
-                 <span v-if="props.column.field === 'label'">
-                     <b-badge variant="primary" >{{props.row[props.column.field]}}</b-badge>
+                <span v-if="props.column.field === 'label'">
+                    <b-badge variant="primary">{{props.row[props.column.field]}}</b-badge>
                 </span>
 
                 <span v-else-if="props.column.field === 'action1'">
-                    <b-button>button</b-button>
+                    <b-button >button</b-button>
+                    <div class="ml-3 mt-1 d-inline-block" >
+                         <b-form-checkbox class="custom-control-primary" checked="true" switch />
+                    </div> 
                 </span>
-                 
+
                 <span v-else-if="props.column.field === 'action2'">
                     <b-dropdown variant="link" toggle-class="text-decoration-none" no-caret class="mr-3 mt-1">
                         <template v-slot:button-content>
@@ -53,12 +54,16 @@ import {
     BDropdown,
     BDropdownItem,
     BProgress,
-    BBadge
+    BBadge,
+    BFormCheckbox
 } from "bootstrap-vue";
-import { VueGoodTable } from 'vue-good-table';
+import {
+    VueGoodTable
+} from 'vue-good-table';
 
 export default {
     components: {
+        BFormCheckbox,
         BCard,
         BButton,
         BDropdown,
@@ -67,8 +72,8 @@ export default {
         BBadge,
         VueGoodTable,
     },
-    created(){
-        this.row_data=[];
+    created() {
+        this.row_data = [];
         for (let i = 0; i < 5; i++) {
             this.row_data.push({
                 id: i,

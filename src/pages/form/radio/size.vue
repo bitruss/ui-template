@@ -9,10 +9,13 @@
             </span>
         </b-card-text>
     </b-row>
-
-    <b-row class="pr-3 pl-3">
+    <b-row class="pl-3 mt-3">
         <b-form-radio v-model="Selected" value="C" class="mr-4" size="sm">small</b-form-radio>
+    </b-row>
+    <b-row class="pl-3 mt-3">
         <b-form-radio v-model="Selected" value="B" class="mr-4">middle</b-form-radio>
+    </b-row>
+    <b-row class="pl-3 mt-3">
         <b-form-radio v-model="Selected" value="A" class="mr-4" size="lg">Checked-LG</b-form-radio>
     </b-row>
 

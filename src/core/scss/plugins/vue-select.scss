@@ -1,5 +1,13 @@
 @import "vue-select/src/scss/vue-select.scss";
 
+
+.custom-select {
+  -moz-appearance: none; // For firefox
+  -webkit-appearance: none; // for chrome
+}
+
+
+
 .v-select {
   flex: 1 1 auto;
 

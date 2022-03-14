@@ -51,3 +51,124 @@ output.form-control {
     height: calc(1.5em + 1rem + 2px) !important;
   }
 }
+
+
+
+
+
+
+
+//colors
+
+ 
+.custom-checkbox.b-custom-control-sm .custom-control-label, 
+.input-group-sm .custom-checkbox .custom-control-label {
+   font-size: 0.875rem;
+   line-height: 1.5;
+}
+
+.custom-checkbox.b-custom-control-lg .custom-control-label,
+.input-group-lg .custom-checkbox .custom-control-label {
+   font-size: 1.25rem;
+   line-height: 1.5;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  border-color: $purple !important;
+  background-color: $purple !important;
+  box-shadow: 0 2px 4px 0 rgba($purple, 0.4) !important;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+  border-color: $purple !important;
+  box-shadow: 0 2px 4px 0 rgba($purple, 0.4) !important;
+}
+
+.custom-control-input:disabled:checked ~ .custom-control-label::before {
+  background-color: rgba($purple, 0.6) !important;
+}
+
+.custom-control-secondary {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: darken($secondary,45%) !important;
+    background-color:  darken($secondary,45%) !important;
+    box-shadow: 0 2px 4px 0 rgba($secondary, 0.15) !important;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    border-color: $secondary !important;
+    box-shadow: 0 2px 4px 0 rgba($secondary, 0.4) !important;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba($secondary, 0.6) !important;
+  }
+}
+
+.custom-control-success {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $green !important;
+    background-color: $green !important;
+    box-shadow: 0 2px 4px 0 rgba($green, 0.4) !important;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    border-color: $green !important;
+    box-shadow: 0 2px 4px 0 rgba($green, 0.4) !important;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba($green, 0.6) !important;
+  }
+}
+
+.custom-control-danger {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $red !important;
+    background-color: $red !important;
+    box-shadow: 0 2px 4px 0 rgba($red, 0.4) !important;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    border-color: $red !important;
+    box-shadow: 0 2px 4px 0 rgba($red, 0.4) !important;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba($red, 0.6) !important;
+  }
+}
+
+.custom-control-warning {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $warning !important;
+    background-color: $warning !important;
+    box-shadow: 0 2px 4px 0 rgba($warning, 0.4) !important;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    border-color: $warning !important;
+    box-shadow: 0 2px 4px 0 rgba($warning, 0.4) !important;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba($warning, 0.6) !important;
+  }
+}
+
+.custom-control-info {
+  .custom-control-input:checked ~ .custom-control-label::before {
+    border-color: $blue !important;
+    background-color: $blue !important;
+    box-shadow: 0 2px 4px 0 rgba($blue, 0.4) !important;
+  }
+
+  .custom-control-input:focus ~ .custom-control-label::before {
+    border-color: $blue !important;
+    box-shadow: 0 2px 4px 0 rgba($blue, 0.4) !important;
+  }
+
+  .custom-control-input:disabled:checked ~ .custom-control-label::before {
+    background-color: rgba($blue, 0.6) !important;
+  }
+}

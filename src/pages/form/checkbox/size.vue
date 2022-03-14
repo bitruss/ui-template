@@ -7,11 +7,16 @@
             <code>.select-size-lg</code> or <code>.select-size-sm</code> classes
             to control size
         </span>
-        <b-row class="p-3">
+        <b-row class="pl-3 mt-3">
             <b-form-checkbox size="sm" class="mr-4">small</b-form-checkbox>
+        </b-row>
+        <b-row class="pl-3 mt-3">
             <b-form-checkbox class="mr-4">Unchecked</b-form-checkbox>
+        </b-row>
+        <b-row class="pl-3 mt-3">
             <b-form-checkbox size="lg" class="mr-4">Unchecked</b-form-checkbox>
         </b-row>
+
     </div>
 </div>
 </template>
