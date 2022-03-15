@@ -1,4 +1,4 @@
-# uui-template
+# UITemplate
 
 ## Project setup
 ```
