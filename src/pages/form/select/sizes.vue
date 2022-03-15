@@ -64,7 +64,6 @@ export default {
   components: {
     BCardText,
     BCard,
-   
     vSelect,
     BFormGroup,
     BInputGroup,

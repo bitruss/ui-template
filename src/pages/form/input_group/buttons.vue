@@ -18,7 +18,7 @@
               </b-input-group-prepend>
             <b-form-input placeholder="Button on both side" />
             <b-input-group-append>
-              <b-button variant="secondary"> Search ! </b-button>
+              <b-button variant="secondary"> Search  </b-button>
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
@@ -30,7 +30,7 @@
               </b-input-group-prepend>
             <b-form-input placeholder="Button on both side" />
             <b-input-group-append>
-              <b-button variant="primary"> Search ! </b-button>
+              <b-button variant="primary"> Search  </b-button>
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
@@ -42,7 +42,7 @@
               </b-input-group-prepend>
             <b-form-input placeholder="Button on both side" />
             <b-input-group-append>
-              <b-button variant="secondary"> Search ! </b-button>
+              <b-button variant="secondary"> Search  </b-button>
             </b-input-group-append>
           </b-input-group>
         </b-form-group>
