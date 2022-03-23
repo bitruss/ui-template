@@ -73,7 +73,7 @@
                 </b-input-group-prepend>
                 <b-form-input v-model="vcode" type="text" placeholder="input your v-code" />
                 <b-input-group-append>
-                    <b-overlay :show="vsecs<=0?false:true">
+                    <b-overlay style="margin-left:-1px" :show="vsecs<=0?false:true">
                         <b-button variant="secondary" @click="send_vcode"> Send Me V-code </b-button>
                         <template #overlay>
                             <b-spinner small class="mr-3" label="Small Spinner" /> {{vsecs}}s
