@@ -7,27 +7,14 @@
 }
 
 table.vgt-table {
-    //margin-top: 1px ;
     font-size: 1rem;
-
     .card & {
         border: 0px !important;
     }
 
     td {
-        //padding: 0.05rem 0.3rem;
         vertical-align: middle;
-        .dark & {
-            color: #e6e7ef;
-        }
-
         .b-dropdown.btn-group {
-            svg {
-                .dark & {
-                    color: #ababab !important;
-                }
-            }
-
             button {
                 padding: 0px !important;
                 height: 1rem !important;
@@ -48,15 +35,6 @@ table.vgt-table {
     th {
         input:before {
             background-color: #383838 !important;
-        }
-    }
-
-    thead th,
-    th.line-numbers,
-    th.vgt-checkbox-col {
-        background: #f8f8f8;
-        .dark & {
-            background: #0e0e0e;
         }
     }
 
@@ -83,14 +61,13 @@ table.vgt-table {
     line-height: 2.5rem;
     border: 0px;
     border-bottom: 1px solid #e7e7e7;
-    background: #f8f8f8;
+    background: #f4f4f5;
     color: #7366f0;
 }
 
 .vgt-wrap__footer {
     color: #606266;
     padding: 0.2rem 1em;
-    background: #f8f8f8;
     border: 0px !important;
     border-bottom-left-radius: 0.3rem;
     border-bottom-right-radius: 0.3rem;
