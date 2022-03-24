@@ -1,7 +1,7 @@
 <template>
 <div class="col-12 mb-3">
     <b-card header="Basic">
-        <vue-good-table class="m-1 mt-3" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
+        <vue-good-table class="m-3" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
           enabled: true,
           mode: 'pages',
           perPage: 10,

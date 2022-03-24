@@ -12,6 +12,12 @@ table.vgt-table {
         border: 0px !important;
     }
 
+    thead{
+        th{
+            border-bottom:  solid rgb(165 165 165 / 26%) !important
+        }
+    }
+
     td {
         vertical-align: middle;
         .b-dropdown.btn-group {

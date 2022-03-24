@@ -2,7 +2,7 @@
 <div class="col-12 mb-3">
     <b-card header="Internal Search">
 
-        <div class="p-1">
+        <div class="p-3">
             <b-input-group class="table_search mb-1">
                 <b-input-group-prepend is-text>
                     <feather-icon icon="SearchIcon" />

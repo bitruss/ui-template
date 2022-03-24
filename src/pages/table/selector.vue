@@ -2,7 +2,7 @@
 <div class="col-12 mb-3">
     <b-card header="CheckBox Selector">
 
-        <vue-good-table class="m-1 mt-3" :columns="columns" :rows="row_data" 
+        <vue-good-table class="m-1 m-3" :columns="columns" :rows="row_data" 
          :select-options="{ enabled: true, selectOnCheckboxOnly: true,disableSelectInfo: false }"
          @on-selected-rows-change="onSelectedRows"
         :sort-options="{ enabled: false }" :pagination-options="{
