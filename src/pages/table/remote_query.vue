@@ -2,46 +2,51 @@
 <div class="col-12 mb-3">
     <b-card header="Remote Pagination Query Forms">
         <div class="p-3">
-        <b-row class="mb-3">
-            <b-col md="6" xl="4" class="pl-0 mt-3  ml-3">
-                <b-input-group>
-                    <b-input-group-prepend is-text>
-                        <feather-icon icon="SearchIcon" />
-                    </b-input-group-prepend>
-                    <b-form-input placeholder="query name" />
-                </b-input-group>
-            </b-col>
 
-            <b-col md="6" xl="4" class="pl-0 mt-3  ml-3">
-                <b-input-group>
-                    <b-input-group-prepend is-text>
-                        <feather-icon icon="SearchIcon" />
-                    </b-input-group-prepend>
-                    <b-form-input placeholder="query sex" />
-                </b-input-group>
-            </b-col>
-        </b-row>
+            <b-button variant="secondary" class="mr-3 mb-3" id="popover-search">
+                <feather-icon icon="SearchIcon" class="mr-2" size="15" />
+                <span class="align-middle">Search-items</span>
+            </b-button>
 
-        <b-row class="mb-3">
-            <b-col>
-                <b-button variant="secondary" @click="refreshTable"> Search</b-button>
-            </b-col>
-        </b-row>
+            <b-popover target="popover-search" triggers="focus" placement="bottomright" >
+                <template #title>
+                    <span>Search</span>
+                </template>
+                <div>
+                    <b-row class="mb-3">
+                        <b-col class="pl-0 mt-2  ml-3">
+                           <b-form-input placeholder="query name" />
+                        </b-col>
+                    </b-row>
 
-        <b-overlay :show="table_show_overlay" rounded="sm">
-            <vue-good-table @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
+                    <b-row>
+                        <b-col class="pl-0  ml-3">
+                            <b-form-input placeholder="query sex" />
+                        </b-col>
+                    </b-row>
+
+                    <b-row class="mb-1 mt-3">
+                        <b-col>
+                            <b-button variant="secondary" @click="refreshTable"> Search</b-button>
+                        </b-col>
+                    </b-row>
+                </div>
+            </b-popover>
+
+            <b-overlay :show="table_show_overlay" rounded="sm">
+                <vue-good-table @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
             enabled: true,
             mode: 'pages',
             perPage: 10,
             perPageDropdown: [5, 10, 20, 50, 100, 250, 500, 1000],
             setCurrentPage: 1,
           }">
-                <template slot="table-row" slot-scope="props">
-                    <!-- Column: Common -->
-                    <span>{{ props.row[props.column.field] }}</span>
-                </template>
-            </vue-good-table>
-        </b-overlay>
+                    <template slot="table-row" slot-scope="props">
+                        <!-- Column: Common -->
+                        <span>{{ props.row[props.column.field] }}</span>
+                    </template>
+                </vue-good-table>
+            </b-overlay>
         </div>
     </b-card>
 </div>
@@ -56,6 +61,7 @@ import {
     BFormInput,
     BInputGroupPrepend,
     BButton,
+    BPopover,
     BOverlay,
 } from "bootstrap-vue";
 import {
@@ -71,6 +77,7 @@ export default {
         BFormInput,
         BInputGroupPrepend,
         BButton,
+        BPopover,
         BOverlay,
         VueGoodTable,
     },
@@ -90,7 +97,7 @@ export default {
             }
             return {
                 count: 300,
-                data:server_simu_data
+                data: server_simu_data
             };
         },
 
