@@ -27,20 +27,15 @@
 
                     <b-row class="mb-1 mt-3">
                         <b-col>
-                            <b-button variant="secondary" @click="refreshTable"> Search</b-button>
+                            <b-button variant="secondary" @click="searchTable"> Search</b-button>
                         </b-col>
                     </b-row>
                 </div>
             </b-popover>
 
             <b-overlay :show="table_show_overlay" rounded="sm">
-                <vue-good-table @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" :pagination-options="{
-            enabled: true,
-            mode: 'pages',
-            perPage: 10,
-            perPageDropdown: [5, 10, 20, 50, 100, 250, 500, 1000],
-            setCurrentPage: 1,
-          }">
+                <vue-good-table @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" 
+                :pagination-options="pagination">
                     <template slot="table-row" slot-scope="props">
                         <!-- Column: Common -->
                         <span>{{ props.row[props.column.field] }}</span>
@@ -122,6 +117,12 @@ export default {
             this.row_data = response.data;
             this.totalRows = response.count;
             this.table_show_overlay = false;
+            //this.pagination.setCurrentPage=1;
+            console.log("table refresh offset"+this.offset+"limit"+this.limit);
+        },
+        searchTable(){
+            this.offset = 0;
+            this.refreshTable();
         }
     },
     created() {
@@ -143,11 +144,20 @@ export default {
                     thClass: "text-center",
                 },
             ],
-            row_data: [],
+            pagination: {
+                enabled: true,
+                mode: "pages",
+                perPage: 10,
+                perPageDropdown: [5, 10, 20, 50, 100, 250, 500, 1000],
+                setCurrentPage: 1,
+            },
             table_show_overlay: true,
+            //
+            row_data: [],
             limit: 10,
             offset: 0,
             totalRows: 0,
+
         };
     },
 };

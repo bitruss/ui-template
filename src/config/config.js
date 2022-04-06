@@ -1,6 +1,7 @@
+import example_router from "./example_router" //delete example_router in your production env
 import router from "./router"
 export default {
-    router: router,
+    router: [...router,...example_router],
     core_router: {
         login: {
             path: '/login',

@@ -51,7 +51,7 @@ It is already registered in the main.js for global reference.
 
 ### How to use
 ```
-1. Edit 'config/config.js' file where you should define your own router.
+1. Edit 'config/router.js'  file where you should define your own router.
 Don't delete core_router items as they are required for core system.
 
 2. Inside 'pages' folder add your own pages.
