@@ -34,7 +34,7 @@
             </b-popover>
 
             <b-overlay :show="table_show_overlay" rounded="sm">
-                <vue-good-table @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" 
+                <vue-good-table ref="remote_q_table" @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" 
                 :pagination-options="pagination">
                     <template slot="table-row" slot-scope="props">
                         <!-- Column: Common -->
@@ -110,6 +110,7 @@ export default {
         refreshTable() {
             this.table_show_overlay = true;
             //as if we do remote query and get data
+            //console.log("table refresh offset"+this.offset+"limit"+this.limit);
             let response = this.simuRemoteQuery({
                 limit: this.limit,
                 offset: this.offset
@@ -117,10 +118,10 @@ export default {
             this.row_data = response.data;
             this.totalRows = response.count;
             this.table_show_overlay = false;
-            //this.pagination.setCurrentPage=1;
-            console.log("table refresh offset"+this.offset+"limit"+this.limit);
+            
         },
         searchTable(){
+            this.$refs['remote_q_table'].reset();
             this.offset = 0;
             this.refreshTable();
         }
