@@ -165,26 +165,29 @@ export default {
         },
         async login() {
             this.show_overlay = true;
-            let apir = await this.$api.user.login(this.email, this.password);
+            let resp = await this.$api.user.login(this.email, this.password);
             this.show_overlay = false;
-            if (apir.status <= 0) {
-                this.$bvToast.toast(apir.msg, {
+
+            if (resp.err != null||resp.result.meta_status < 0) {
+                let errmsg = ""
+                if (resp.err != null) {errmsg = resp.err}else{errmsg = resp.result.meta_msg}
+                this.$bvToast.toast(errmsg, {
                     title: `Error`,
                     variant: "danger",
                     solid: true,
                     toaster: "b-toaster-top-center",
                 });
                 return;
-            } else {
-                this.$store.commit("auth/UPDATE_MY_LOGIN_ROLES_PERMISSIONS", {
-                    web_token: apir.result.web_token,
-                    roles: apir.result.roles,
-                    permissions: apir.result.permissions,
-                });
-                this.$router.push({
-                    path: "/",
-                });
             }
+ 
+            this.$store.commit("auth/UPDATE_MY_LOGIN_ROLES_PERMISSIONS", {
+                web_token: resp.result.user.token,
+                roles: resp.result.user.roles,
+                permissions: resp.result.user.permissions,
+            });
+            this.$router.push({
+                path: "/",
+            });
         },
     },
 };

@@ -19,12 +19,18 @@
                         </b-col>
                     </b-row>
 
-                    <b-row>
+                    <b-row class="mb-3">
                         <b-col class="pl-0  ml-3">
                             <b-form-input placeholder="query sex" />
                         </b-col>
                     </b-row>
 
+                     <b-row class="mb-3">
+                        <b-col class="pl-0 ml-3"  >
+                            <b-form-select :options="['All', ...option]"></b-form-select>
+                        </b-col>
+                     </b-row>
+                                    
                     <b-row class="mb-1 mt-3">
                         <b-col>
                             <b-button variant="secondary" @click="searchTable"> Search</b-button>
@@ -58,10 +64,13 @@ import {
     BButton,
     BPopover,
     BOverlay,
+    BFormSelect,
 } from "bootstrap-vue";
 import {
     VueGoodTable
 } from "vue-good-table";
+
+  
 
 export default {
     components: {
@@ -74,6 +83,7 @@ export default {
         BButton,
         BPopover,
         BOverlay,
+        BFormSelect,
         VueGoodTable,
     },
     methods: {
@@ -158,6 +168,8 @@ export default {
             limit: 10,
             offset: 0,
             totalRows: 0,
+
+            option: ["A", "NS", "MX", "TXT", "CNAME", "CAA", "SOA"],
 
         };
     },

@@ -11,20 +11,20 @@ if (config.plugins.mock.enable) {
                 const data = JSON.parse(config.data);
                 if (data.email == 'admin@test.com') {
                     resolve([200, {
-                        status: 1, // correct status
-                        msg: '',
-                        result: {
+                        meta_status: 1, // correct status
+                        meta_msg: '',
+                        user: {
                             roles: ['admin'],
                             permissions: [],
                             name: 'admin',
-                            web_token: 'this_is_the_mocked_web_token'
+                            token: 'this_is_the_mocked_web_token'
                         }
                     }]);
                 } else {
                     resolve([200, {
-                        status: -1, //error status
-                        msg: 'User not found',
-                        result: {}
+                        meta_status: -1, //error status
+                        meta_msg: 'User not found',
+                        user: {}
                     }]);
                 }
             }, 3000); //5 seconds delay

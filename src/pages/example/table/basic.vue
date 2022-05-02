@@ -90,7 +90,8 @@ export default {
                     label: 'Name',
                     field: 'name',
                     tdClass: 'text-center',
-                    thClass: 'text-center'
+                    thClass: 'text-center',
+                    width: '550px',
                 },
                 {
                     label: 'Label',
