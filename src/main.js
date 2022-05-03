@@ -16,6 +16,13 @@ Vue.use(ToastPlugin);
 Vue.use(ModalPlugin);
 Vue.use(CollapsePlugin);
 
+
+//popover
+import FloatingVue from 'floating-vue'
+import 'floating-vue/dist/style.css'
+Vue.use(FloatingVue)
+
+
 //http tools
 import Axios from 'axios'
 Vue.prototype.$axios = Axios;
@@ -24,6 +31,8 @@ Vue.prototype.$plugin=config.plugin;
 //api
 import api from './api'
 Vue.prototype.$api=api;
+
+
 
 
 //store

@@ -3,41 +3,36 @@
     <b-card header="Remote Pagination Query Forms">
         <div class="p-3">
 
-            <b-button variant="secondary" class="mr-3 mb-3" id="popover-search">
-                <feather-icon icon="SearchIcon" class="mr-2" size="15" />
-                <span class="align-middle">Search-items</span>
-            </b-button>
-
-            <b-popover target="popover-search" triggers="focus" placement="bottomright" >
-                <template #title>
-                    <span>Search</span>
-                </template>
-                <div>
+            <VDropdown>
+                 <b-button variant="secondary" class="mb-2" >
+                    <feather-icon icon="SearchIcon" class="mr-2" size="15" />
+                    <span class="align-middle">Search-items</span>
+                </b-button>
+                <!-- This will be the content of the popover -->
+                <template #popper>
                     <b-row class="mb-3">
                         <b-col class="pl-0 mt-2  ml-3">
                            <b-form-input placeholder="query name" />
                         </b-col>
                     </b-row>
-
                     <b-row class="mb-3">
                         <b-col class="pl-0  ml-3">
                             <b-form-input placeholder="query sex" />
                         </b-col>
                     </b-row>
-
                      <b-row class="mb-3">
                         <b-col class="pl-0 ml-3"  >
-                            <b-form-select :options="['All', ...option]"></b-form-select>
+                            <v-select multiple :options="['All', ...option]"></v-select>
                         </b-col>
-                     </b-row>
-                                    
+                     </b-row>   
                     <b-row class="mb-1 mt-3">
                         <b-col>
                             <b-button variant="secondary" @click="searchTable"> Search</b-button>
                         </b-col>
                     </b-row>
-                </div>
-            </b-popover>
+                </template>
+            </VDropdown>
+
 
             <b-overlay :show="table_show_overlay" rounded="sm">
                 <vue-good-table ref="remote_q_table" @on-page-change="onPageChange" @on-per-page-change="onPerPageChange" :totalRows="totalRows" :columns="columns" :rows="row_data" :sort-options="{ enabled: false }" 
@@ -62,15 +57,14 @@ import {
     BFormInput,
     BInputGroupPrepend,
     BButton,
-    BPopover,
     BOverlay,
-    BFormSelect,
 } from "bootstrap-vue";
 import {
     VueGoodTable
 } from "vue-good-table";
 
-  
+import vSelect from 'vue-select'
+
 
 export default {
     components: {
@@ -81,10 +75,9 @@ export default {
         BFormInput,
         BInputGroupPrepend,
         BButton,
-        BPopover,
         BOverlay,
-        BFormSelect,
         VueGoodTable,
+        vSelect,
     },
     methods: {
         simuRemoteQuery(params) {
