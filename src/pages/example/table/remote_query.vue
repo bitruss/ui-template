@@ -3,7 +3,7 @@
     <b-card header="Remote Pagination Query Forms">
         <div class="p-3">
 
-            <VDropdown>
+            <VDropdown :shown.sync="dropdown_shown">
                  <b-button variant="secondary" class="mb-2" >
                     <feather-icon icon="SearchIcon" class="mr-2" size="15" />
                     <span class="align-middle">Search-items</span>
@@ -27,9 +27,11 @@
                      </b-row>   
                     <b-row class="mb-1 mt-3">
                         <b-col>
-                            <b-button variant="secondary" v-close-popper="true" @click="searchTable"> Search</b-button>
+                               <b-button variant="secondary" v-close-popper="true" @click="searchTable">Search</b-button>
+                               <b-button variant="secondary" class="mlc-2" @click="dropdown_shown=false">HideMe</b-button>
                         </b-col>
                     </b-row>
+
                 </template>
             </VDropdown>
 
@@ -162,6 +164,7 @@ export default {
             offset: 0,
             totalRows: 0,
 
+            dropdown_shown:false,
             option: ["A", "NS", "MX", "TXT", "CNAME", "CAA", "SOA"],
 
         };
