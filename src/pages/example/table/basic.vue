@@ -79,7 +79,7 @@ export default {
                 id: i,
                 name: 'Name' + i,
                 label: 'label-' + i,
-                data: 'this is data of ' + i,
+                data: 'this is data of long long long long long   long long long long long  long long long long long  long long long long long text ' + i,
                 score: i
             });
         }
@@ -105,7 +105,8 @@ export default {
                     field: 'data',
                     type: 'text',
                     tdClass: 'text-center',
-                    thClass: 'text-center'
+                    thClass: 'text-center',
+                    width: '250px',
                 },
                 {
                     label: 'Percent',
