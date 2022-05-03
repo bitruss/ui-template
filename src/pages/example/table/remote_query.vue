@@ -27,7 +27,7 @@
                      </b-row>   
                     <b-row class="mb-1 mt-3">
                         <b-col>
-                            <b-button variant="secondary" @click="searchTable"> Search</b-button>
+                            <b-button variant="secondary" v-close-popper="true" @click="searchTable"> Search</b-button>
                         </b-col>
                     </b-row>
                 </template>
