@@ -27,8 +27,9 @@
                      </b-row>   
                     <b-row class="mb-1 mt-3">
                         <b-col>
-                               <b-button variant="secondary" v-close-popper="true" @click="searchTable">Search</b-button>
-                               <b-button variant="secondary" class="mlc-2" @click="dropdown_shown=false">HideMe</b-button>
+                               <b-button variant="secondary"  @click="searchTable">Search </b-button>
+                               <b-button variant="secondary" class="ml-2" v-close-popper="true" @click="searchTable">Search and close</b-button>
+                               <b-button variant="secondary" class="ml-2" @click="dropdown_shown=false">Hide Me programmatically </b-button>
                         </b-col>
                     </b-row>
 
