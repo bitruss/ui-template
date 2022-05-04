@@ -22,16 +22,20 @@ import FloatingVue from 'floating-vue'
 import 'floating-vue/dist/style.css'
 Vue.use(FloatingVue)
 
+//tools
+import tools from './tools'
+Vue.prototype.$tools=tools;
 
-//http tools
+
+//http 
 import Axios from 'axios'
 Vue.prototype.$axios = Axios;
 Vue.prototype.$plugin=config.plugin;
 
+
 //api
 import api from './api'
 Vue.prototype.$api=api;
-
 
 
 
